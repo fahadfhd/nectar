@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:nectar/provider/addscreen_provider.dart';
 import 'package:nectar/utils/extension.dart';
-import 'package:nectar/utils/video_record_widget.dart';
 import 'package:provider/provider.dart';
 
 class CameraGalleryDialoge extends StatelessWidget {
@@ -16,19 +15,19 @@ class CameraGalleryDialoge extends StatelessWidget {
   Widget build(BuildContext context) {
     var provider = context.read<AddscreenProvider>();
     return Padding(
-        padding: EdgeInsets.fromLTRB(20, 57, 20, 57),
+        padding: const EdgeInsets.fromLTRB(20, 57, 20, 57),
         child: Wrap(
           spacing: 10,
           runSpacing: 10,
           children: [
             GestureDetector(
               child: Container(
-                  padding: EdgeInsets.only(left: 10),
+                  padding: const EdgeInsets.only(left: 10),
                   height: 140,
                   width: 155,
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(12),
-                      color: Color(0xffEFF6F6)),
+                      color: const Color(0xffEFF6F6)),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -45,7 +44,7 @@ class CameraGalleryDialoge extends StatelessWidget {
                           scale: 2,
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 25,
                       ),
                       Text(
@@ -53,7 +52,7 @@ class CameraGalleryDialoge extends StatelessWidget {
                         style: GoogleFonts.poppins(
                             fontSize: 12,
                             fontWeight: FontWeight.w400,
-                            color: Color(0xff161616)),
+                            color: const Color(0xff161616)),
                       ),
                     ],
                   )),
@@ -65,12 +64,12 @@ class CameraGalleryDialoge extends StatelessWidget {
             ),
             GestureDetector(
               child: Container(
-                  padding: EdgeInsets.only(left: 10),
+                  padding: const EdgeInsets.only(left: 10),
                   height: 140,
                   width: 155,
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(12),
-                      color: Color(0xffEFF6F6)),
+                      color: const Color(0xffEFF6F6)),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -87,7 +86,7 @@ class CameraGalleryDialoge extends StatelessWidget {
                           scale: 2,
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 25,
                       ),
                       Text(
@@ -95,7 +94,7 @@ class CameraGalleryDialoge extends StatelessWidget {
                         style: GoogleFonts.poppins(
                             fontSize: 12,
                             fontWeight: FontWeight.w400,
-                            color: Color(0xff161616)),
+                            color: const Color(0xff161616)),
                       ),
                     ],
                   )),
@@ -108,12 +107,12 @@ class CameraGalleryDialoge extends StatelessWidget {
             ),
             GestureDetector(
               child: Container(
-                  padding: EdgeInsets.only(left: 10),
+                  padding: const EdgeInsets.only(left: 10),
                   height: 140,
                   width: 155,
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(12),
-                      color: Color(0xffEFF6F6)),
+                      color: const Color(0xffEFF6F6)),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -130,7 +129,7 @@ class CameraGalleryDialoge extends StatelessWidget {
                           scale: 2,
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 25,
                       ),
                       Text(
@@ -138,13 +137,13 @@ class CameraGalleryDialoge extends StatelessWidget {
                         style: GoogleFonts.poppins(
                             fontSize: 12,
                             fontWeight: FontWeight.w400,
-                            color: Color(0xff161616)),
+                            color: const Color(0xff161616)),
                       ),
                     ],
                   )),
               onTap: () async {
                 // Navigator.pop(context);
-                Navigator.pushNamed(context, VideoRecorderWidget.route);
+                // Navigator.pushNamed(context, VideoRecordCamera.route);
               },
             ),
           ],

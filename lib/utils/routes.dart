@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:nectar/add_screen/add_screen.dart';
 import 'package:nectar/home/home_screen.dart';
-import 'package:nectar/utils/video_record_widget.dart';
+import 'package:nectar/utils/video_record.dart';
 
 RouteFactory onAppGenerateRoutes() => (settings) {
       switch (settings.name) {
@@ -16,11 +16,12 @@ RouteFactory onAppGenerateRoutes() => (settings) {
             pageBuilder: (context, animation, secondaryAnimation) =>
                 const AddScreen(),
           );
-        case VideoRecorderWidget.route:
-          return PageRouteBuilder(
-            pageBuilder: (context, animation, secondaryAnimation) =>
-                VideoRecorderWidget(),
-          );
+
+        // case VideoRecordCamera.route:
+        //   return PageRouteBuilder(
+        //     pageBuilder: (context, animation, secondaryAnimation) =>
+        //         const VideoRecordCamera(),
+        //   );
 
         default:
           return null; // Handle unknown routes appropriately
